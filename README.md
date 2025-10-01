@@ -1,7 +1,4 @@
-Aqui vai um exemplo profissional e completo de README.md para o projeto Conecta Refeições, pronto para você colocar no GitHub:
-
-
----
+----
 
 # 🍽️ Conecta Refeições
 
@@ -192,10 +189,3 @@ Conecta Refeições - Sistema de Gestão de Pedidos em Obras
 ---
 
 > 💡 Este projeto foi criado para otimizar a comunicação e o controle de refeições entre construtoras e restaurantes, promovendo eficiência, transparência e redução de custos no setor da construção civil.
-
-
-
----
-
-Quer que eu personalize esse README com **tecnologias específicas** que você vai usar no projeto (ex.: React, Django, etc.) e já deixe pronto para publicar no GitHub? (Se sim, me diz quais tecnologias você escolheu para **frontend**, **backend** e **banco de dados**.)
-
