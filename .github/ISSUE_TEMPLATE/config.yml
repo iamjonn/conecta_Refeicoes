@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📚 Documentação
+    url: https://github.com/iamjonn/conecta_Refeicoes/blob/main/README.md
+    about: Consulte a documentação do projeto para mais informações
+  - name: 💬 Discussões
+    url: https://github.com/iamjonn/conecta_Refeicoes/discussions
+    about: Participe de discussões sobre o projeto
