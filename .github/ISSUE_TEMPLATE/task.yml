@@ -1,0 +1,121 @@
+name: 📋 Task (Tarefa)
+description: Template de tarefa para todos os colaboradores
+title: "[TASK] "
+labels: ["task", "colaboradores"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📋 Nova Tarefa
+        
+        Preencha as informações abaixo para criar uma nova tarefa no projeto Conecta Refeições.
+        
+  - type: input
+    id: title
+    attributes:
+      label: Título da Tarefa
+      description: Um título claro e conciso para a tarefa
+      placeholder: ex. Implementar cadastro de colaboradores
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      description: Descreva detalhadamente a tarefa a ser realizada
+      placeholder: Explique o que precisa ser feito...
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridade
+      description: Qual a prioridade desta tarefa?
+      options:
+        - 🔴 Alta
+        - 🟡 Média
+        - 🟢 Baixa
+      default: 1
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: category
+    attributes:
+      label: Categoria
+      description: Em qual área do sistema esta tarefa se enquadra?
+      options:
+        - 👷 Colaboradores
+        - 🍽️ Restaurantes
+        - 🏗️ Gestão de Obras
+        - 🛠️ Administração
+        - 📊 Relatórios
+        - 🔐 Segurança
+        - 📱 Mobile
+        - 🌐 Web
+        - 🔧 Infraestrutura
+        - 📝 Documentação
+        - 🐛 Correção de Bug
+        - ✨ Nova Funcionalidade
+      default: 0
+    validations:
+      required: true
+      
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Critérios de Aceitação
+      description: Liste os critérios que devem ser atendidos para considerar a tarefa concluída
+      placeholder: |
+        - [ ] Critério 1
+        - [ ] Critério 2
+        - [ ] Critério 3
+      value: |
+        - [ ] 
+    validations:
+      required: false
+      
+  - type: textarea
+    id: technical-details
+    attributes:
+      label: Detalhes Técnicos
+      description: Adicione informações técnicas relevantes, como arquivos a serem modificados, APIs a serem usadas, etc.
+      placeholder: Informações técnicas adicionais...
+    validations:
+      required: false
+      
+  - type: input
+    id: estimated-time
+    attributes:
+      label: Tempo Estimado
+      description: Estimativa de tempo para conclusão (ex. 2 horas, 1 dia, 1 semana)
+      placeholder: ex. 3 horas
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: dependencies
+    attributes:
+      label: Dependências
+      description: Esta tarefa depende de outras tarefas?
+      options:
+        - label: Esta tarefa tem dependências (especifique nos comentários)
+          required: false
+          
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        ### 📝 Próximos Passos
+        
+        Após criar a tarefa:
+        1. A tarefa será automaticamente marcada com as labels `task` e `colaboradores`
+        2. Atribua a tarefa a um colaborador específico, se necessário
+        3. Acompanhe o progresso através do board de projetos
+        4. Marque os critérios de aceitação conforme forem sendo completados
+        
+        💡 **Dica**: Use comentários para manter todos atualizados sobre o progresso da tarefa!
