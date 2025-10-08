@@ -1,0 +1,147 @@
+name: 📋 Nova Tarefa
+description: Template para criação de novas tarefas do projeto
+title: "[TASK] "
+labels: ["task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por contribuir com o Conecta Refeições! Use este template para criar uma nova tarefa.
+        
+  - type: input
+    id: task-title
+    attributes:
+      label: Título da Tarefa
+      description: Informe um título descritivo para a tarefa
+      placeholder: ex. Implementar autenticação de usuários
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: task-type
+    attributes:
+      label: Tipo de Tarefa
+      description: Selecione o tipo de tarefa
+      options:
+        - Feature (Nova funcionalidade)
+        - Bug Fix (Correção de erro)
+        - Enhancement (Melhoria)
+        - Documentation (Documentação)
+        - Refactoring (Refatoração)
+        - Testing (Testes)
+        - DevOps (Infraestrutura/Deploy)
+        - Other (Outro)
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridade
+      description: Qual a prioridade desta tarefa?
+      options:
+        - 🔴 Alta
+        - 🟡 Média
+        - 🟢 Baixa
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: module
+    attributes:
+      label: Módulo do Sistema
+      description: A qual módulo esta tarefa pertence?
+      options:
+        - Frontend
+        - Backend
+        - Mobile
+        - Database
+        - API
+        - Infrastructure
+        - Documentation
+        - General
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      description: Descreva detalhadamente o que precisa ser feito
+      placeholder: |
+        Descreva aqui:
+        - O que precisa ser implementado
+        - O contexto da tarefa
+        - Benefícios esperados
+    validations:
+      required: true
+      
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Critérios de Aceitação
+      description: Liste os critérios que definem quando esta tarefa está concluída
+      placeholder: |
+        - [ ] Critério 1
+        - [ ] Critério 2
+        - [ ] Critério 3
+    validations:
+      required: true
+      
+  - type: textarea
+    id: technical-details
+    attributes:
+      label: Detalhes Técnicos
+      description: Informações técnicas relevantes (opcional)
+      placeholder: |
+        - Tecnologias envolvidas
+        - Arquivos a serem modificados
+        - Dependências
+        - Considerações de implementação
+    validations:
+      required: false
+      
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependências
+      description: Esta tarefa depende de outras tarefas? Liste-as aqui (opcional)
+      placeholder: |
+        - Issue #123
+        - Issue #456
+    validations:
+      required: false
+      
+  - type: input
+    id: estimated-time
+    attributes:
+      label: Tempo Estimado
+      description: Estimativa de tempo para conclusão (opcional)
+      placeholder: ex. 2 dias, 1 semana, 4 horas
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: related-profile
+    attributes:
+      label: Perfil de Usuário Relacionado
+      description: Esta tarefa está relacionada a qual perfil de usuário?
+      multiple: true
+      options:
+        - 👷‍♂️ Colaborador da obra
+        - 🍽️ Restaurante parceiro
+        - 🏗️ Gestor de obras
+        - 🛠️ Administrador
+        - 📱 Todos os perfis
+        - 🔧 Infraestrutura/Sistema
+    validations:
+      required: false
+      
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Contexto Adicional
+      description: Qualquer informação adicional relevante (opcional)
+      placeholder: Screenshots, links, referências, etc.
+    validations:
+      required: false
